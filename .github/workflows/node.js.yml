@@ -49,7 +49,7 @@ jobs:
     
     - name: "Setup npm"
       run: |
-        npm set @jlmortola:registry=https://npm.pkg.github.com/jlmortola
+        npm set @jlmortola:registry=https://npm.pkg.github.com
         npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}"
     
     - run: yarn
