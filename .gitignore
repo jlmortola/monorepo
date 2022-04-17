@@ -6,3 +6,5 @@ loadable-stats.json
 server.js
 .env
 .serverless
+build
+tsconfig.build.tsbuildinfo
