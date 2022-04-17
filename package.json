@@ -15,7 +15,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "lerna publish",
+    "release": "lerna publish from-package -y",
     "release2": "lerna run build && lerna publish",
     "semantic-release": "semantic-release --branches main -e semantic-release-monorepo"
   },
