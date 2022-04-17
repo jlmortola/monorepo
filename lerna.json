@@ -9,7 +9,7 @@
     "version": {
       "conventionalCommits": true,
       "message": "chore: Publish",
-      "registry": "https://npm.pkg.github.com"
+      "registry": "https://registry.npmjs.org"
     }
   }
 }
