@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+**/node_modules
+public
+loadable-stats.json
+server.js
+.env
+.serverless

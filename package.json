@@ -1,0 +1,41 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "start": "lerna run start --stream",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.4.9",
+    "@testing-library/dom": "^8.13.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
+    "jest": "^27.5.1",
+    "lerna": "^4.0.0",
+    "postcss": "^8.4.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.7",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {}
+}
