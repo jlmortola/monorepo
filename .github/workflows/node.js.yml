@@ -49,7 +49,7 @@ jobs:
     
     - name: "NPM Identity"
       run: |
-        echo "//registry.npmjs.org/:_authToken==${{ secrets.GITHUB_TOKEN }" > .npmrc
+        echo "//registry.npmjs.org/:_authToken==${{ secrets.GITHUB_TOKEN }}" > .npmrc
     
     - run: yarn
     - run: yarn release
