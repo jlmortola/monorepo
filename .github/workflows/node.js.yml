@@ -47,7 +47,10 @@ jobs:
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
     
+    - name: "Setup npm"
+      run: |
+        npm set @jlmortola:registry=https://npm.pkg.github.com/jlmortola
+        npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}"
+    
     - run: yarn
     - run: yarn release
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
