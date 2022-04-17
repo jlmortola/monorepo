@@ -15,7 +15,9 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "semantic-release": "semantic-release --branches main"
+    "release": "lerna publish",
+    "release2": "lerna run build && lerna publish",
+    "semantic-release": "semantic-release --branches main -e semantic-release-monorepo"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
@@ -49,5 +51,10 @@
   },
   "publishConfig": {
     "access": "restricted"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
