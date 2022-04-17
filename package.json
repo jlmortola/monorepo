@@ -50,7 +50,7 @@
     "url": "https://github.com/jlmortola/monorepo.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "@jlmortola:registry": "https://npm.pkg.github.com/jlmortola"
   },
   "config": {
     "commitizen": {
