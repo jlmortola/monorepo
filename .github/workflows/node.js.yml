@@ -51,7 +51,7 @@ jobs:
       run: |
         echo "@jlmortola:registry=http://registry.npmjs.org/" > .npmrc
         echo "registry=http://registry.npmjs.org/" >> .npmrc
-        echo "//registry.npmjs.org/:_authToken==${{ secrets.GITHUB_TOKEN }}" > .npmrc
+        echo "//registry.npmjs.org/:_authToken==${{ secrets.NPM_TOKEN }}" > .npmrc
     
     - run: yarn
     - run: yarn release
