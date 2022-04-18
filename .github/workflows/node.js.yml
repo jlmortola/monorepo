@@ -51,8 +51,9 @@ jobs:
       uses: c-hive/gha-yarn-cache@v1
     
     - name: "NPM Identity"
-      run: |
-        echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" > .npmrc
+      run: 
+        echo "@jlmortola:registry=https://npm.pkg.github.com" > .npmrc
+        echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >> .npmrc
 
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
