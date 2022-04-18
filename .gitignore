@@ -3,6 +3,8 @@ node_modules
 
 # production
 build
+/packages/*/build
+/packages/*/tsconfig.build.tsbuildinfo
 tsconfig.build.tsbuildinfo
 storybook-static
 public
