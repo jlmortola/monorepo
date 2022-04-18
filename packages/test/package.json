@@ -18,8 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/jlmortola/monorepo.git",
-    "directory": "packages/testgit "
+    "url": "git+https://git@github.com/jlmortola/monorepo.git",
+    "directory": "packages/test"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
