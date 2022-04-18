@@ -46,6 +46,8 @@ jobs:
       uses: CultureHQ/actions-yarn@v1.0.1
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
+      
+    - run: npm config set registry https://registry.npmjs.org/
     
     - name: "NPM Identity"
       run: |
