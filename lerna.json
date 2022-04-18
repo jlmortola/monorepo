@@ -7,6 +7,7 @@
   "useWorkspaces": true,
   "command": {
     "version": {
+      "yes": true,
       "conventionalCommits": true,
       "message": "chore: Publish",
       "registry": "https://npm.pkg.github.com"
