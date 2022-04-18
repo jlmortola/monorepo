@@ -16,7 +16,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "release3": "lerna publish from-package --no-verify-access -y",
-    "release": "lerna run build && lerna publish from-package --no-verify-access -y",
+    "release": "lerna publish",
     "semantic-release": "semantic-release --branches main -e semantic-release-monorepo"
   },
   "devDependencies": {
