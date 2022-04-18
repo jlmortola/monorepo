@@ -49,7 +49,11 @@ jobs:
       uses: CultureHQ/actions-yarn@v1.0.1
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
-    
+
+    - name: Git Identity
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
     - name: "NPM Identity"
       run: 
         echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" > .npmrc
