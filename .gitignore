@@ -1,10 +1,23 @@
-.DS_Store
-.vscode
-**/node_modules
-public
-loadable-stats.json
-server.js
-.env
-.serverless
+# dependencies
+node_modules
+
+# production
 build
 tsconfig.build.tsbuildinfo
+storybook-static
+public
+.env
+.serverless
+
+# tests
+coverage
+
+# boring files
+lerna-debug.log
+.DS_Store
+.vscode
+.npmrc
+
+# Yalc
+.yalc
+yalc.lock
