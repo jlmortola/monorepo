@@ -49,12 +49,12 @@ jobs:
       uses: CultureHQ/actions-yarn@v1.0.1
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
-    - run: npm install -g npm@latest  
-    - run: npm config set registry https://registry.npmjs.org/
     
     - name: "NPM Identity"
       run: |
-        echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+        echo "@jlmortola:registry=https://registry.npmjs.org/" > .npmrc
+        echo "registry=https://registry.npmjs.org/" >> .npmrc
+        echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     
